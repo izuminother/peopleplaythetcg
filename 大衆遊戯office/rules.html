@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ルール - 大衆遊戯</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="rules.html" class="active">ルール</a></li>
+                    <li><a href="cards.html">カード一覧</a></li>
+                    <li><a href="deck.html">デッキビルダー</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rules-section">
+            <h1>ルール説明</h1>
+            <div class="rules-container">
+                <div class="rules-tabs">
+                    <button class="tab-button active" data-tab="game-overview">ゲームについて</button>
+                    <button class="tab-button" data-tab="deck-cards">デッキとカード</button>
+                    <button class="tab-button" data-tab="card-reading">カードの見方</button>
+                    <button class="tab-button" data-tab="game-setup">ゲームの準備</button>
+                    <button class="tab-button" data-tab="game-flow">ゲームの流れ</button>
+                </div>
+
+                <div class="tab-content active" id="game-overview">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oTYrRRbagzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-content">
+                        <h2>ゲームについて</h2>
+                        <p>大衆遊戯は2人で遊ぶカードゲームです。プレイヤーは交互に手番を行い、相手のライフを10削ることを目指します。</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="deck-cards">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/72pD3QMceTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-content">
+                        <h2>デッキとカード</h2>
+                        <div class="card-type-info">
+                            <div class="type-item">
+                                <h3>デッキ構成</h3>
+                                <p>1枚のアリーナカードと25枚のメインカードで構成されます。メインカードは以下のカードタイプが含まれます(同名カードは3枚まで)：</p>
+                                <ul>
+                                    <li>大衆カード</li>
+                                    <li>報道カード</li>
+                                    <li>発言権カード</li>
+                                    <li>ファンファーレカード</li>
+                                    <li>アリーナカード</li>
+                                </ul>
+                            </div>
+                            <div class="type-item">
+                                <h3>カードタイプ</h3>
+                                <p>各カードタイプの特徴：</p>
+                                <ul>
+                                    <li>大衆：場に出して攻撃や防御を行うカード</li>
+                                    <li>報道：使うと廃材置き場に置かれるカード</li>
+                                    <li>発言権：カードのコストの支払いに使われるカード、何枚でも同名カードを入れられる。</li>
+                                    <li>ファンファーレ：デッキに1枚しか入れられず、使うとゲームから除外されるカード。</li>
+                                    <li>アリーナ：条件を満たすことで裏返り、強力な効果を発動するカード。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="card-reading">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f10jPjKFFKw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-content">
+                        <h2>カードの見方</h2>
+                        <div class="card-reading-info">
+                            <div class="reading-item">
+                                <h3>カード情報</h3>
+                                <ul>
+                                    <li>カード名：カードの名称</li>
+                                    <li>コスト：カードを出すために必要なコスト（銃はどの属性の発言権でも支払える。嘘、people+、love）</li>
+                                    <li>パワー：カードの攻撃力</li>
+                                    <li>属性：銃/嘘/people+/LOVE</li>
+                                    <li>説明文：カードの効果</li>
+                                </ul>
+                            </div>
+                            <div class="reading-item">
+                                <h3>特殊表示</h3>
+                                <ul>
+                                    <li>レアリティ：R/VR/SR/UR</li>
+                                    <li>イラストレーター：カードイラストの作者</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="game-setup">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OXRVwTU4-Js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-content">
+                        <h2>必要なもの</h2>
+                        <ol>
+                            <li>デッキ アリーナ1枚、メインカード25枚(うち1枚をパートナーカードにする必要がある。)</li>
+                            <h5>パートナーカードはゲーム中、場を離れず防御できないコスト-のPEOPLE1です。</h5>
+                            <li>ダメージダイス 体力の表示用</li>
+                        </ol>
+                    </div>
+                    <div class="text-content">
+                        <h2>ゲームの準備</h2>
+                        <ol>
+                            <li>デッキをシャッフルします</li>
+                            <li>各プレイヤーは5枚ずつカウンターカードを置きます</li>
+                            <li>各プレイヤーは5枚ずつ手札を引きます</li>
+                            <li>先手プレイヤーを決定します</li>
+                            <li>ゲーム開始！</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="game-flow">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZeI5DjPiHKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-content">
+                        <h2>ゲームの流れ</h2>
+                        <ol>
+                            <li>ターン開始時にカードを1枚引きます</li>
+                            <li>以下の行動を任意の順序で行えます：
+                                <ul>
+                                    <li>アリーナの下に発言権を置く。(ターンに1度まで)</li>
+                                    <li>カードを使う。(大衆ならばに出す。)</li>
+                                </ul>
+                            </li>
+                            <li>場の大衆で攻撃する。
+                            <li>ターンエンド</li>
+                            <li>相手のターンに移ります</li>
+                        </ol>
+                        <p>※一方のライフポイントが0になるまで続けます</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 大衆遊戯 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/rules.js"></script>
+</body>
+</html> 
